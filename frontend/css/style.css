@@ -326,6 +326,27 @@ li.hnll {
     margin: 50px 0;
 }
 
+.fp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    font-family: var(--text-font1);
+    font-size: 1.5em;
+    max-width: 400px;
+    box-shadow: -20px 20px 0px #fe820e34;
+    padding-left: 5px;
+}
+
+.about-img {
+    max-width: 520px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 .subtitle {
     font-family: var(--text-font1);
     font-size: 2.2em;
@@ -375,4 +396,87 @@ li.hnll {
 .mission-card:hover {
     border: 1px solid var(--s-color);
     transform: scale(1.05);
+}
+
+/*service*/
+.services-section,
+.process-projet-section, 
+.nos-offres {
+    margin-top: 80px;
+}
+  
+.process-container {
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff61;
+    backdrop-filter: blur(5px);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+  
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+  
+.step {
+    display: flex;
+    align-items: baseline;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.8s forwards;
+}
+  
+.step:nth-child(1) { animation-delay: 0.3s; }
+.step:nth-child(2) { animation-delay: 0.6s; }
+.step:nth-child(3) { animation-delay: 0.9s; }
+.step:nth-child(4) { animation-delay: 1.2s; }
+.step:nth-child(5) { animation-delay: 1.5s; }
+  
+.circle {
+    min-width: 45px;
+    height: 45px;
+    background-color: #af4c0f;
+    color: #fff;
+    font-family: var(--title-font);
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+    font-size: 1.5em;
+}
+  
+.content h3 {
+    margin: 0 0 6px;
+    font-size: 1.5em;
+    color: #af4c0f;
+    font-family: var(--title-font);
+}
+  
+.content p {
+    margin: 0;
+    color: #444;
+    font-size: 15px;
+    line-height: 1.5;
+    font-size: 1.2em;
+    font-family: var(--text-font2);
+}
+  
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
