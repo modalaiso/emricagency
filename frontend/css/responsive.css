@@ -1,4 +1,8 @@
 @media screen and (max-width: 1016px) {
+    .header-container {
+        width: 85%;
+    }
+
     .nav-links {
         display: none;
     }
