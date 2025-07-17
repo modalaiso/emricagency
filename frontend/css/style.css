@@ -69,10 +69,6 @@ body {
     }
 }
 
-header {
-    display: flex;
-    justify-content: center;
-}
 
 a {
     text-decoration: none;
@@ -83,6 +79,11 @@ li {
     list-style: none;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
 .header-container {
     position: fixed;
     top: 50px;
@@ -91,7 +92,7 @@ li {
     justify-content: space-between;
     background: var(--header);
     border-radius: 20px;
-    width: 1000px;
+    width: 70%;
     padding: 18px;
     box-shadow: 0 7px 20px #0000001a;
     transition: ease 0.8s transform, ease 0.8s box-shadow;
@@ -171,7 +172,8 @@ li.hnll {
 
 /* Hero section */
 .hero-section {
-    margin: 250px;
+    margin-top: 250px;
+    margin-bottom: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -403,6 +405,7 @@ li.hnll {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -436,6 +439,7 @@ li.hnll {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
     user-select: none;
     font-weight: bolder;
     color: var(--s-color);
@@ -487,14 +491,14 @@ li.hnll {
 .service-title {
     font-size: 1.4rem;
     font-family: var(--title-font);
-    color: #111827;
+    color: #492007;
     margin-bottom: 1rem;
 }
   
 .service-text {
     font-family: var(--text-font1);
     font-size: 1rem;
-    color: #4b5563;
+    color: /*#4b5563*/var(--card-color);
     line-height: 1.6;
 }
   
@@ -559,13 +563,13 @@ li.hnll {
     font-size: 1.2rem;
     font-weight: bold;
     font-family: var(--title-font);
-    color: #222;
+    color: #492007;
 }
 
 .step-desc {
     font-size: 0.95rem;
     font-family: var(--text-font2);
-    color: #666;
+    color: var(--card-color);
     line-height: 1.5;
 }
 

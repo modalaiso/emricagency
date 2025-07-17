@@ -1,0 +1,82 @@
+@media screen and (max-width: 1016px) {
+    .nav-links {
+        display: none;
+    }
+
+    .lucide-chevron-right {
+        display: none;
+    }
+
+    .footer-wrap {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .social-links,
+    .footer-part,
+    .footer-nav-list,
+    .a-n-link,
+    .mc {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 492px) {
+    .hero-h1 {
+        font-size: 4.5em;
+        text-align: center;
+    }
+
+    .usp {
+        font-size: 1.4em;
+        max-width: 400px;
+    }
+
+    .about-section,
+    .services-section,
+    .process-projet-section,
+    .nos-offres {
+        margin: 0 25px 0 25px;
+    }
+
+    .hero-section {
+        margin-top: 200px;
+        margin-bottom: 200px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .section-title {
+        font-size: 2.5em;
+    }
+
+    .fp {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+     
+    .about-text {
+        font-size: 1.2em;
+    }
+
+    .about-img {
+        max-width: 365px;
+    }
+
+    .process-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lucide-chevron-right {
+        display: flex;
+        rotate: 90deg;
+    }
+
+    footer {
+        border-radius: 20px 20px 0 0;
+    }
+}
