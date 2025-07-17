@@ -1,6 +1,7 @@
 @media screen and (max-width: 1016px) {
     .header-container {
         width: 85%;
+        top: 25px;
     }
 
     .nav-links {
