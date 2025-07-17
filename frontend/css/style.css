@@ -350,7 +350,7 @@ li.hnll {
 .section-title {
     font-family: var(--title-font);
     font-size: 3.5em;
-    color: var(--title-color);
+    color: #492007;
     text-align: center;
     font-weight: 600;
     margin: 50px 0;
@@ -406,11 +406,15 @@ li.hnll {
     font-size: 1.5em;
     max-width: 135px;
     font-family: var(--title-font);
-    background: linear-gradient(270deg, #ff6600, #af4c0f);
-    background-size: 100% 100%;
-    -webkit-background-clip: text;
+    color: #ffc898;
+    /*background: linear-gradient(270deg, #ff6600, #af4c0f);
+    background-size: 100% 100%;*/
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    /*-webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;*/
+    z-index: 1;
+    -webkit-text-stroke: 1px black;
 }
   
 .mission-card {
@@ -427,9 +431,14 @@ li.hnll {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     user-select: none;
     font-weight: bolder;
     color: var(--s-color);
+}
+
+.illustration {
+    position: absolute;
 }
   
 .mission-card:hover {
@@ -574,6 +583,11 @@ li.hnll {
 footer {
     background: var(--title-color);
     border-radius: 50px 50px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 .form-book {
@@ -625,6 +639,12 @@ button.form-button {
     cursor: pointer;
 }
 
+.footer-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
 .a-n-link {
     display: flex;
     align-items: center;
@@ -646,6 +666,13 @@ button.form-button {
     font-family: var(--text-font1);
     font-size: 1.2em;
     color: var(--text-color);
+    margin: 10px;
+}
+
+.a-c {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .mc {
@@ -653,6 +680,7 @@ button.form-button {
     align-items: center;
     gap: 5px;
     font-family: var(--text-font1);
+    margin-left: 10px;
 }
 .svg {
     color: #b3b3b3;
@@ -674,7 +702,14 @@ button.form-button {
 
 .footer-part {
     font-family: var(--title-font);
-    font-size: 1.5em;
+    font-size: 1.8em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-nav-list ul {
+    padding-left: 10px;
+    margin-top: 0;
 }
 
 .footer-nav-list li {
@@ -684,4 +719,44 @@ button.form-button {
     padding: 0;
     font-family: var(--text-font1);
     font-size: 1.2em;
+}
+
+.social-links {
+    display: flex;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.lucide-instagram,
+.scg-tiktok {
+    transition: color 0.3s ease;
+    color: #000;
+}
+
+.lucide-instagram:hover,
+.scg-tiktok:hover {
+    color: #ffdec3;
+}
+
+.highlight {
+    color: var(--title-color);
+}
+
+.bottom-line {
+    width: 100%;
+    height: 1px;
+    color: #fff;
+    background-color: #ffffff;
+	border: none;
+    margin: 0;
+}
+
+.bottom {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fe810e;
+}
+.filigrane {
+    font-family: var(--text-font1);
+    padding: 10px 20px;
 }
