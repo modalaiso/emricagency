@@ -44,7 +44,6 @@
     .violet {
         width: 250px;
         height: 250px;
-        background: #a259ff;
         top: 0px;
         right: 5px;
     }
@@ -53,13 +52,12 @@
     .yellow {
         width: 200px;
         height: 200px;
-        background: #ffea00;
         top: 40%;
         left: 40%;
     }
 
     .hero-h1 {
-        font-size: 4.5em;
+        font-size: 4.2em;
         text-align: center;
     }
 
