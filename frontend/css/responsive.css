@@ -27,33 +27,28 @@
 @media screen and (max-width: 1016px) {
     /* Orange - bas gauche */
     .orange {
-        width: 300px;
-        height: 300px;
-        background: #ff9900;
+        width: 250px;
+        height: 250px;
         bottom: -100px;
         left: -100px;
-        animation-delay: 0s;
     }
   
     /* Violet - haut droite */
     .violet {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         background: #a259ff;
         top: 0px;
         right: 5px;
-        animation-delay: 2s;
     }
   
     /* Jaune - centre */
     .yellow {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         background: #ffea00;
         top: 40%;
         left: 40%;
-        transform: translate(-50%, -50%);
-        animation-delay: 4s;
     }
 
     .hero-h1 {
