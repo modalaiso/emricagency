@@ -6,10 +6,6 @@
         backdrop-filter: blur(5px);
     }
 
-    .nav-links {
-        display: none;
-    }
-
     .lucide-chevron-right {
         display: none;
     }

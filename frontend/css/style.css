@@ -820,3 +820,101 @@ button.form-button:hover {
     font-family: var(--text-font1);
     padding: 10px 20px;
 }
+
+/* BOUTON BURGER */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-toggle .bar {
+    height: 2px;
+    width: 20px;
+    background: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+/* Animation en croix quand menu ouvert */
+.menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+
+/* MENU MOBILE */
+@media (max-width: 1016px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px;
+        width: 90%;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #fff3edb2;
+        backdrop-filter: blur(5px);
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px #0000001a;
+        z-index: 1001;
+    }
+
+    .nav-links.open {
+        max-height: 300px; /* ajustable selon le nombre de liens */
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .hero-cta-link {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-cta {
+        width: 100%;
+    }
+}
