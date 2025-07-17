@@ -102,25 +102,36 @@
             <section class="services-section" id="nos-services">
                 <h2 class="section-title">Des services pensés pour votre <span class="highlight">croissance</span></h2>
                 <div class="services-container">
-                    <div class="services-rep">
+                    <div class="services-grid">
                         <div class="service-card">
-                            <div class="ns-card">
-                                <!--svg-->
-                                <h3 class="ns-card-title">Gestion des réseaux sociaux</h3>
-                                <p class="ns-card-text">Nous prenons en charge l’ensemble de votre présence en ligne, depuis la création ou l’optimisation de vos comptes sur les réseaux sociaux jusqu’à la publication régulière de contenus engageants. Chaque action est pensée pour valoriser votre image de marque et toucher efficacement votre audience cible. Nous assurons également un suivi précis des performances à travers des rapports statistiques clairs, vous permettant d’évaluer concrètement les résultats obtenus.</p>
+                            <div class="icon-wrapper">
+                                <img src="assets/svg/marketing-2-9.svg" alt="Réseaux sociaux">
                             </div>
-                            <div class="ns-card">
-                                <!--svg-->
-                                <h3 class="ns-card-title">Création de contenu</h3>
-                                <p class="ns-card-text">Nous assurons la création de contenus visuels sur mesure, qu’il s’agisse de vidéos, carrousels, photographies ou autres formats adaptés aux réseaux sociaux, ainsi que la rédaction de textes percutants et cohérents avec votre identité de marque, afin de capter l’attention de votre audience et favoriser l’engagement.</p>
-                            </div>
-                            <div class="ns-card">
-                                <!--svg-->
-                                <h3 class="ns-card-title">Consulting</h3>
-                                <p class="ns-card-text">Nous réalisons un audit complet de vos réseaux sociaux afin d’identifier les forces, les axes d’amélioration et les opportunités propres à votre activité. Sur cette base, nous élaborons une stratégie social media personnalisée, alignée avec vos objectifs de communication et de croissance.</p>
-                            </div>
+                            <h3 class="service-title">Gestion des réseaux sociaux</h3>
+                            <p class="service-text">
+                                Nous prenons en charge l’ensemble de votre présence en ligne, depuis la création ou l’optimisation de vos comptes sur les réseaux sociaux jusqu’à la publication régulière de contenus engageants. Chaque action est pensée pour valoriser votre image de marque et toucher efficacement votre audience cible. Nous assurons également un suivi précis des performances à travers des rapports statistiques clairs, vous permettant d’évaluer concrètement les résultats obtenus.
+                            </p>
                         </div>
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <img src="assets/svg/content-creation-92.svg" alt="Création de contenu">
+                            </div>
+                            <h3 class="service-title">Création de contenu</h3>
+                            <p class="service-text">
+                                Nous assurons la création de contenus visuels sur mesure, qu’il s’agisse de vidéos, carrousels, photographies ou autres formats adaptés aux réseaux sociaux, ainsi que la rédaction de textes percutants et cohérents avec votre identité de marque, afin de capter l’attention de votre audience et favoriser l’engagement.
+                            </p>
+                        </div>
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <img src="assets/svg/team-presentation-4-33.svg" alt="Consulting">
+                            </div>
+                            <h3 class="service-title">Consulting</h3>
+                            <p class="service-text">
+                                Nous réalisons un audit complet de vos réseaux sociaux afin d’identifier les forces, les axes d’amélioration et les opportunités propres à votre activité. Sur cette base, nous élaborons une stratégie social media personnalisée, alignée avec vos objectifs de communication et de croissance.
+                            </p>
                     </div>
+                      </div>
+                    </section>                    
                 </div>
             </section>
             <section class="process-projet-section" id="process-projet">
@@ -260,15 +271,23 @@
         </main>
         <footer>
             <div class="form-book">
-                <h2 class="form-title">Formulaire</h2>
-                <div class="form-container">
-                    <input type="text" class="form-input" placeholder="Prénom" required>
-                    <input type="text" class="form-input" placeholder="Nom de l'entreprise" required>
-                    <input type="email" class="form-input" placeholder="Email" required>
-                    <textarea class="form-textarea" placeholder="Vos besoins"></textarea>
-                    <button type="submit" class="form-button">Demander un devis</button>
-                </div>
-            </div>
+                <h2 class="form-title">Formulaire de devis</h2>
+                <form class="form-container" action="#" method="post">
+                  <div class="form-group">
+                    <input type="text" id="prenom" name="prenom" class="form-input" placeholder="Votre prénom" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" id="entreprise" name="entreprise" class="form-input" placeholder="Nom de l'entreprise" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Votre adresse e-mail" required>
+                  </div>
+                  <div class="form-group">
+                    <textarea id="besoins" name="besoins" class="form-textarea" placeholder="Vos besoins ou attentes"></textarea>
+                  </div>
+                  <button type="submit" class="form-button">Demander un devis</button>
+                </form>
+              </div>
             <div class="footer-wrap">
                 <div class="ff">
                     <div class="a-n">

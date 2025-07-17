@@ -10,6 +10,10 @@
     --h-font: 'Questrial', sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background: linear-gradient(to right, #ffefe4, #ffdec3);
@@ -447,6 +451,53 @@ li.hnll {
 }
 
 /*service*/
+.services-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+  
+.service-card {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    height: 400px;
+}
+  
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+  
+.icon-wrapper {
+    height: 60px;
+    margin-bottom: 1rem;
+}
+  
+.icon-wrapper img {
+    height: 100%;
+    object-fit: contain;
+}
+  
+.service-title {
+    font-size: 1.4rem;
+    font-family: var(--title-font);
+    color: #111827;
+    margin-bottom: 1rem;
+}
+  
+.service-text {
+    font-family: var(--text-font1);
+    font-size: 1rem;
+    color: #4b5563;
+    line-height: 1.6;
+}
+  
 .services-section,
 .process-projet-section, 
 .nos-offres {
@@ -637,6 +688,11 @@ button.form-button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button.form-button:hover {
+    background: #492007;
 }
 
 .footer-wrap {
