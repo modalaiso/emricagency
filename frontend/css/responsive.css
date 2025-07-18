@@ -1,8 +1,31 @@
+@media screen and (max-width: 884px) {
+    .lucide-chevron-right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 834px) {
+    .lucide-chevron-right {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1016px) {
     .header-container {
         width: 85%;
         top: 25px;
         background: var(--header);
+    }
+
+    .step-reveal {
+        opacity: 0;
+        transform: translateY(-40px);
+        transition: opacity 1.8s ease, transform 2s ease;
+    }
+    
+    .step-reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .lucide-chevron-right {
@@ -23,6 +46,11 @@
     .mc {
         justify-content: center;
         text-align: center;
+    }
+
+    .offers-cards {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -69,7 +97,7 @@
     }
 
     .hero-section {
-        margin-top: 200px;
+        padding-top: 200px;
         margin-bottom: 200px;
         margin-left: 25px;
         margin-right: 25px;
@@ -104,5 +132,14 @@
 
     footer {
         border-radius: 20px 20px 0 0;
+    }
+
+    .form-title {
+        font-size: 2em;
+    }
+
+    .form-textarea,
+    .form-input {
+        width: 280px;
     }
 }
