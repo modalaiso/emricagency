@@ -1,27 +1,16 @@
-document.getElementById("devis-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const form = e.target;
-
-    const data = {
-        prenom: form.prenom.value,
-        entreprise: form.entreprise.value,
-        email: form.email.value,
-        besoins: form.besoins.value
-    };
-
-    fetch("TON_URL_SCRIPT_APPS", {
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector(".form-container");
+    if (!form) return;
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+  
+      fetch(form.action, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data)
-    })
-    .then(response => response.json())
-    .then(result => {
-        alert("Demande envoyée avec succès !");
-        form.reset();
-    })
-    .catch(error => {
-        alert("Une erreur s'est produite.");
-        console.error(error);
+        body: data,
+      })
+        .then(() => alert("Demande envoyée !"))
+        .catch(() => alert("Erreur lors de l'envoi."));
     });
   });
+  

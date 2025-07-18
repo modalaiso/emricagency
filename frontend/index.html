@@ -29,6 +29,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Questrial&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
+    <script src="js/form-book.js"></script>
     <body>
         <div class="background">
             <div class="blur-circle orange"></div>
@@ -287,7 +288,7 @@
         <footer>
             <div class="form-book">
                 <h2 class="form-title">Formulaire de devis</h2>
-                <form class="form-container" action="https://script.google.com/macros/s/AKfycbxdwnPZHimrQt1Q3VY7qEGHTbq67G6-0hKA3BNv2Mk--1lPpA26YpKCAqt5Gqvhr0BHgQ/exec" method="POST">
+                <form class="form-container" action="https://script.google.com/macros/s/AKfycbwPBaqvEcoZx_oKh1cYII4hbxZJDnlT0WGx2j-eRmlVTXB5RpDGEbpljnTs5bAEIMR67g/exec" method="POST">
                     <div class="form-group">
                         <input type="text" id="prenom" name="prenom" class="form-input" placeholder="Votre prénom" required>
                     </div>
@@ -379,25 +380,7 @@
             </svg>
         </a>
         <script src="js/menu-toggle.js"></script>
-        <script src="js/form-book.js"></script>
         <script src="js/reveal.js"></script>
-        <script src="js/scroll-top-btn.js"></script>
-        <script>
-            const form = document.querySelector(".form-container");
-          
-            form.addEventListener("submit", function (e) {
-                e.preventDefault();
-                const data = new FormData(form);
-          
-                fetch(form.action, {
-                    method: "POST",
-                    body: data,
-                })
-                .then(response => alert("Demande envoyée avec succès !"))
-                .catch(error => alert("Une erreur est survenue."));
-              
-                form.reset();
-            });
-          </script>          
+        <script src="js/scroll-top-btn.js"></script>        
     </body>
 </html>
