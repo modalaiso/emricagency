@@ -894,12 +894,12 @@ button.form-button:hover {
         overflow: hidden;
         transition: max-height 0.3s ease;
         border-radius: 20px;
-        box-shadow: 0 10px 20px #0000001a;
+        box-shadow: 0 30px 20px #0000001a;
         z-index: 1001;
     }
 
     .nav-links.open {
-        max-height: 300px; /* ajustable selon le nombre de liens */
+        max-height: 300px;
     }
 
     .nav-list {
